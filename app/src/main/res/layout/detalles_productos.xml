@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="80dp">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/design_default_color_background"
+        android:gravity="fill_horizontal"
+        android:minHeight="0dp"
+        android:theme="@style/AlertDialog.AppCompat"
+        app:title="regresar"
+        app:titleTextColor="@color/color_ripler_center"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgdetalleProd"
+
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/tvtitleprodetall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgdetalleProd"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="String"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvdescriptiondetall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvtitleprodetall"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:text="String"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="precios"
+            android:textStyle="bold">
+
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvpreciodetall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvdescriptiondetall"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/color_ripler_start" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

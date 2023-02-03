@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="8dp"
+    android:background="@drawable/ripler">
+
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tvnombreitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre" />
+
+    <TextView
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_items_precio"
+        android:id="@+id/tvprecioitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Precio" />
+
+
+</RelativeLayout>
